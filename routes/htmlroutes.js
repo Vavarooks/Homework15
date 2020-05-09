@@ -9,4 +9,7 @@ app.get("/stats",(req, res)=> {
 app.get("/",(req, res)=> {
     res.sendfile(path.join(__dirname, "../public/index.html"))
 })
+
+
+
 module.exports = app;

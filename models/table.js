@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
-const workout = new Schema(
+const workoutdata = new Schema(
     {
         day: {
         type: Date,
@@ -16,7 +16,7 @@ const workout = new Schema(
             duration:{
                 type: Number
             },
-            weigth:{
+            weight:{
                 type: Number
             },
             reps:{
@@ -32,6 +32,6 @@ const workout = new Schema(
     }
 )
 
-const Newtable = mongoose.model("Newtable", workout)
+const Newtable = mongoose.model("Newtable", workoutdata)
 
 module.exports = Newtable;
